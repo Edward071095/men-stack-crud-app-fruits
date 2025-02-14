@@ -12,6 +12,9 @@ mongoose.connection.on('connected', ()=> {
 });
 
 
+const Fruit = require('./models/fruit.js');
+
+
 // GET /
 app.get("/", async (req, res) => {
     res.render("index.ejs");
